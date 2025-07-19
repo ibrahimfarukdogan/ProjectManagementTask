@@ -1,0 +1,65 @@
+.base {
+    height: 100vh;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #292D4D;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.header h2 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.userlist {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.useritem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #636363;
+}
+
+.userheader {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    height: 60px;
+    font-weight: 800;
+    background-color: #281836;
+}
+
+.useritem span {
+    overflow: hidden;
+}
+
+.modaladduserdetailbuttonarea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.modaladduserdetailbuttonarea button{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+}
+
+.inputError {
+    border: 1px solid red;
+}

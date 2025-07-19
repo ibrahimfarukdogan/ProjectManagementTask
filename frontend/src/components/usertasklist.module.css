@@ -1,0 +1,227 @@
+.base {
+    height: 100vh;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #292D4D;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.header h2 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.userlist {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.useritem {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #636363;
+}
+
+.userheader {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    height: 60px;
+    font-weight: 800;
+    background-color: #281836;
+}
+
+.useritem span {
+    overflow: hidden;
+}
+
+.modaladduserdetailbuttonarea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modaladduserdetailbuttonarea button {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1100;
+}
+
+.modaladduser {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #37305B;
+    padding: 10px 10px 0px 10px;
+    border-radius: 8px;
+    z-index: 1200;
+}
+
+.modaladduserheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.modaladduserheader h2 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.modaladduserheader button {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+}
+
+.modaladduserform {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 30px 20px 30px 20px;
+}
+
+.modaladduserforminput {
+    width: 330px;
+    height: 44px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: white;
+    color: rgb(39, 39, 39);
+    padding: 5px;
+}
+
+.modaladduserform select {
+    background-color: white;
+    color: rgb(70, 69, 69);
+    font-size: 18px;
+    height: 30px;
+}
+
+.submitbtn{
+    padding: 6px;
+    color: black;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-left: 5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.submitbtn:hover{
+    background-color: #ccc;
+
+}
+
+.modalupdateuserform {
+    display: flex;
+    flex-direction: row;
+}
+
+.modalupdateuserformlabel {
+    width: 110px;
+    align-items: center;
+}
+
+.modalupdateuserform select {
+    background-color: white;
+    color: rgb(70, 69, 69);
+    font-size: 18px;
+    height: 30px;
+}
+
+.modalupdateuserform h3 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.modalupdatedescfield {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 20px;
+}
+
+.textBox {
+    width: 360px;
+    height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 5px;
+    justify-content: start;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fafafa;
+    color: black;
+    text-align: start;
+    white-space: pre-wrap;
+    /* keeps line breaks */
+    word-wrap: break-word;
+    /* wraps long words */
+}
+
+.verticalLine {
+    border-left: 2px solid #ccc;
+    height: 334px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.modalupdateselectfield {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.selectwidth {
+    width: 220px;
+    height: 44px;
+}
+
+.statusOpen {
+    color: rgb(0, 255, 0)
+}
+
+.statusInProgress {
+    color: rgb(223, 157, 15);
+}
+
+.statusDone {
+    color: red;
+}
+
+.inputError {
+    border: 1px solid red;
+}

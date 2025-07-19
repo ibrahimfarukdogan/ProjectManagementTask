@@ -1,0 +1,65 @@
+.base {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    background-color: #281836;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.leftside {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    align-items: center;
+    gap: 10px;
+}
+
+.overlay {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 75px);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 80;
+    /* less than navbar (1000), more than content (e.g., 1–500) */
+}
+.menubuttondiv{
+    min-height: 50px;
+    min-width: 60px;
+}
+.menubutton{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menubutton:hover{
+    background-color: transparent;
+}
+.base h1{
+    margin: 0px;
+    font-size: 22px;
+    font-family: 'Segoe UI';
+}
+.logoutbutton{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}

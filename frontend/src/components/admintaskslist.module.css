@@ -1,0 +1,310 @@
+.base {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    align-items: baseline;
+}
+
+.header h2 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.header button {
+    margin-left: auto;
+    background-color: #A142B6;
+    font-size: 18px;
+    font-weight: 700;
+    height: 45px;
+    width: 150px;
+    padding: 0;
+}
+
+.buttontext {
+    display: flex;
+    flex-direction: row;
+}
+
+.separator {
+    border-right: 1px solid rgb(255, 255, 255);
+    width: 105px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttontext span {
+    width: 40px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 30px;
+
+}
+
+.userlist {
+    display: flex;
+    flex-direction: column;
+}
+
+.useritem {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #636363;
+}
+
+.userheader {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    height: 60px;
+    font-weight: 800;
+    background-color: #281836;
+}
+
+.useritem span {
+    overflow: hidden;
+}
+
+.useritembtnarea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.useritembtnarea button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1100;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    z-index: 1200;
+}
+
+.modaladduser {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #37305B;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1200;
+}
+
+.modaladduserheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modaladduserheader h2 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.modaladduserheader button {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+}
+
+.modaladduserform {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 30px 20px 30px 20px;
+}
+
+.modaladduserforminput {
+    width: 330px;
+    height: 44px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: white;
+    color: rgb(39, 39, 39);
+    padding: 5px;
+}
+
+.modaladduserform select {
+    background-color: white;
+    color: rgb(70, 69, 69);
+    font-size: 18px;
+    height: 30px;
+}
+
+.modaladduserbuttonarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+}
+
+.modaladduserbuttonarea button {
+    background-color: white;
+    color: rgb(70, 69, 69);
+    font-size: 18px;
+    height: 50px;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.modaldeleteuser {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #21304D;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1200;
+}
+
+.modaldeleteuserheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.modaldeleteuserheaderbutton {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+}
+
+.modaldeleteuserheaderbutton img {
+    max-width: 12px;
+}
+
+.modaldeleteuserbuttonarea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.modaldeleteuserh5 {
+    margin: 0px 90px 15px 90px;
+    font-size: 24px;
+}
+
+.modaldeleteuserbuttonarea button {
+    background-color: white;
+    color: rgb(70, 69, 69);
+    font-size: 18px;
+    height: 50px;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.modalupdateuserform {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 5px 5px 5px 5px;
+}
+
+.modalupdateuserformlabel {
+    width: 110px;
+    align-items: center;
+}
+
+.modalupdateuserform select {
+    background-color: white;
+    color: rgb(70, 69, 69);
+    font-size: 18px;
+    height: 30px;
+}
+
+.modalupdateuserform h5 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.modalupdateuserformbtnarea {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.modalupdateuserformaddbtn {
+    margin-left: 20px;
+    background-color: white;
+    color: black;
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+    padding: 0px;
+    border-radius: 3px;
+}
+.selectarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.selectlabel {
+    width: 60px;
+    text-align: start;
+}
+
+.statusOpen {
+  color: rgb(0, 255, 0)
+}
+.statusInProgress {
+  color: rgb(223, 157, 15);
+}
+.statusDone {
+  color: red;
+}
+
+.inputError {
+    border: 1px solid red;
+}

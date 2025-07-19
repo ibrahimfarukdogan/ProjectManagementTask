@@ -1,0 +1,62 @@
+.sidebar {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 250px;
+    height: calc(100% - 75px);
+    z-index: 90;
+    background-color: #281836;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebarOpen {
+    transform: translateX(0);
+}
+.sidebarcontent{
+    width: 180px;
+    height: 250px;
+    display: inline;
+    gap: 10px;
+}
+.sidebar h4{
+    width: 180px;
+    font-weight: 600;
+    margin: 3px;
+}
+.sidebar hr{
+    min-width: 180px;
+    margin-bottom: 20px;
+}
+.buttonnormal{
+    background-color: transparent;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    border-bottom: #858484 solid 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.buttonactive{
+    background-color: #858484;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    border-bottom: #13C8F4 solid 8px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.sidebar button:hover{
+    background-color: #333f41;
+}
