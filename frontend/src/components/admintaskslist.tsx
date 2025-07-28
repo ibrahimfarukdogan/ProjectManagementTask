@@ -68,11 +68,6 @@ export default function admintaskslist() {
     }));
   };
 
-  const assignedUserIds = new Set(tasks.map((t) => t.user_id));
-  const availableMembers = members.filter((member) => !assignedUserIds.has(member.id));
-  const selectedUser = members.find(u => u.id === formData.user_id);
-  const fullUserList = availableMembers.concat(selectedUser && !availableMembers.some(u => u.id === selectedUser.id) ? [selectedUser] : []);
-
   const handleCreateSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
@@ -142,6 +137,11 @@ export default function admintaskslist() {
       console.error(error.message || 'Delete User failed');
     }
   };
+
+  //const assignedUserIds = new Set(tasks.map((t) => t.user_id));
+  //const availableMembers = members.filter((member) => !assignedUserIds.has(member.id));
+  //const selectedUser = members.find(u => u.id === formData.user_id);
+  //const fullUserList = availableMembers.concat(selectedUser && !availableMembers.some(u => u.id === selectedUser.id) ? [selectedUser] : []);
 
   return (
     <div className={`${styles.base}`}>
@@ -239,7 +239,7 @@ export default function admintaskslist() {
                     <label className={`${styles.selectlabel}`}>User ID: </label>
                     <select name="user_id" value={formData.user_id} onChange={handleSelectChange}>
                       <option value="">Choose one</option>
-                      {availableMembers.map((user) => (
+                      {members.map((user) => (
                         <option key={user.id} value={user.id}>
                           {truncate(user.id + ": " + user.username, 12)}
                         </option>
@@ -293,7 +293,7 @@ export default function admintaskslist() {
                     <label className={`${styles.selectlabel}`}>User ID: </label>
                     <select name="user_id" value={formData.user_id} onChange={handleSelectChange}>
                       <option value="">Choose one</option>
-                      {fullUserList.map((user) => (
+                      {members.map((user) => (
                         <option key={user.id} value={user.id}>
                           {truncate(user.id + ": " + user.username, 12)}
                         </option>
